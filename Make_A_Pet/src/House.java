@@ -64,7 +64,9 @@ public class House {
     }
 
     public boolean perfectHouse() {
+        // Scanner input = new Scanner(System.in);
         if (getBasement() && getBackyard()) {
+            System.out.println("It's a perfect house!");
             return true;
         } else {
             return false;
@@ -73,7 +75,7 @@ public class House {
     }
 
     public String houseSummary() {
-        return new String("Our house house has " + getBathNumber() + "bathrooms and " + getRoomNumber() + ".");
+        return "Our house house has" + getBathNumber() + "bathrooms and " + getRoomNumber() + ".";
     }
 
     public static void main(String[] args) {

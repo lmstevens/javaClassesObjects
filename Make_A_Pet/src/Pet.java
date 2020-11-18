@@ -124,22 +124,22 @@ public class Pet {
     // //         "}";
     // // }
 
-    // public static void main(String[] args) {
-    //     Scanner input = new Scanner(System.in);
-    //     // String myPetName = input.nextLine();
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        // String myPetName = input.nextLine();
 
-    //     Pet myPet = new Pet();
+        Pet myPet = new Pet();
 
-    //     String myPetName = myPet.getName();
-    //     System.out.println(myPetName);
+        String myPetName = myPet.getName();
+        System.out.println(myPetName);
 
-    //     myPet.setName("Friday");
+        myPet.setName("Friday");
 
-    //     String myNewPetName = myPet.getName();
-    //     System.out.println(myNewPetName);
+        String myNewPetName = myPet.getName();
+        System.out.println(myNewPetName);
+    }    
 
 
 
-    }
     
 }   
