@@ -69,13 +69,14 @@ public class House {
             System.out.println("It's a perfect house!");
             return true;
         } else {
+            System.out.println("No, this is not our perfect house.");
             return false;
         }
 
     }
 
-    public String houseSummary() {
-        return "Our house house has" + getBathNumber() + "bathrooms and " + getRoomNumber() + ".";
+    public void houseSummary() {
+        System.out.println("Our house house has " + this.getBathNumber() + "bathrooms and " + this.getRoomNumber() + "rooms.");
     }
 
     public static void main(String[] args) {
@@ -84,7 +85,7 @@ public class House {
 
         House dreamHome = new House(23,58,34);
         dreamHome.setBackyard(true);
-        dreamHome.setBasement(true);
+        dreamHome.setBasement(false);
 
         dreamHome.houseSummary();
         dreamHome.perfectHouse();
